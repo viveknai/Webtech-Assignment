@@ -1,0 +1,59 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; }
+
+.container { max-width: 1100px; margin: auto; padding: 20px; }
+
+header { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.nav-bar { display: flex; justify-content: space-between; align-items: center; }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav a { text-decoration: none; color: #333; font-weight: 500; transition: 0.3s; }
+nav a:hover, nav a.active { color: #0077cc; }
+
+.hero { height: 400px; background-size: cover; background-position: center; position: relative; }
+.hero-content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; }
+.hero h2 { font-size: 3rem; }
+.hero p { margin-top: 10px; font-size: 1.2rem; }
+
+.btn { display: inline-block; background: #0077cc; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; transition: 0.3s; }
+.btn:hover { background: #005fa3; }
+
+.featured h3 { text-align: center; margin-bottom: 20px; }
+.grid { display: grid; gap: 20px; }
+.grid.contact { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.grid.features { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.card:hover { transform: translateY(-5px); }
+.card img { width: 100%; height: 200px; object-fit: cover; }
+
+.form { display: flex; flex-direction: column; gap: 15px; }
+.form input, .form select, .form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+.form input:focus, .form select:focus, .form textarea:focus { border-color: #0077cc; outline: none; }
+
+.info { display: flex; flex-direction: column; gap: 10px; }
+.info i { margin-right: 10px; color: #0077cc; }
+.socials a { margin-right: 15px; font-size: 1.5rem; color: #333; transition: 0.3s; }
+.socials a:hover { color: #0077cc; }
+
+footer { background: #333; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+
+.fade-in { animation: fadeIn 2s ease-in; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+@media (max-width: 768px) {
+  .hero h2 { font-size: 2rem; }
+  nav ul { flex-direction: column; background: #fff; padding: 10px; }
+}
+
+.travel-info{
+    padding: 0 16px 12px;
+    
+}
+
+.about-info{
+    width: 100%;
+    height: auto;
+    background-color: #0077cc;
+    padding: 12px;
+    color: white;
+    border-radius: 10px;
+}
